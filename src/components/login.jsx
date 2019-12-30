@@ -9,17 +9,6 @@ class Login extends Component {
             password: '',
             submitted: false
         };
-
-        const token = localStorage.getItem('token'); 
-
-        let loggedIn = true;
-        if(token===null)
-        {
-            loggedIn = false;
-        }
-        this.state = {
-            submitted : loggedIn
-        }
          
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);

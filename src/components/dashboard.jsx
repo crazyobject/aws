@@ -9,21 +9,8 @@ class Dashboard extends Component {
         const token = localStorage.getItem('token'); 
         console.log(token);
 
-        let loggegIn = true;
-        if(token===null)
-        {
-            loggegIn = false;
-        }
-        this.state = {
-            loggegIn
-        }
     }
     render() { 
-
-        if(this.state.loggegIn==false)
-        {
-            return <Redirect to='/login' />
-        }
         
         return ( 
             <div>
