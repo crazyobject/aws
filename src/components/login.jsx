@@ -12,13 +12,13 @@ class Login extends Component {
 
         const token = localStorage.getItem('token'); 
 
-        let loggegIn = true;
+        let loggedIn = true;
         if(token===null)
         {
-            loggegIn = false;
+            loggedIn = false;
         }
         this.state = {
-            submitted : loggegIn
+            submitted : loggedIn
         }
          
         this.handleChange = this.handleChange.bind(this);
@@ -29,7 +29,7 @@ class Login extends Component {
 
         if(this.state.submitted===true)
         {
-            return <Redirect to='/dashboard' />
+            return <Redirect to='/' />
         }
 
         return (  

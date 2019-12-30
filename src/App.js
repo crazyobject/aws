@@ -67,7 +67,7 @@ function App() {
       <Router>
             <Switch>
            
-            <Route path="/dashboard" component={Dashboard} />
+            <Route exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
             
