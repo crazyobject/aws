@@ -1,0 +1,21 @@
+[
+    {
+		"dbId" : "db id",
+		"type" : "db type",
+		"database" : "Connectio  A",
+		"conType" : "Source",
+		"createdBy" : "name name",
+		"createdDate" : "date",
+		"lastUpdate" : "date"    
+	},
+    {
+		"dbId" : "db id",
+		"type" : "db type 2",
+		"database" : "Connectio  b",
+		"conType" : "Source 2",
+		"createdBy" : "name name 2",
+		"createdDate" : "date 2",
+		"lastUpdate" : "date 2"
+    }
+]
+
