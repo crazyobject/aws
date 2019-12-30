@@ -1,6 +1,7 @@
 import React from 'react';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
+import List from './components/list';
 import Logout from './components/logout';
 import Footer from './components/footer';
 import './css/bootstrap.min.css';
@@ -24,6 +25,7 @@ function App() {
             <PrivateRoute exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
+			<Route path="/List" component={List} />
             
             </Switch>
       </Router>
