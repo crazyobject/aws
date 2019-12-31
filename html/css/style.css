@@ -2082,6 +2082,13 @@ create-main-content{
   .create-intro-content{
 	padding: 118px 0 60px;
   }
+  .create-connection-btn{
+	  float: right;
+	  margin-top: -63px;
+	  background-color: orange !important;
+	border-color: orange !important;
+	text-transform: none;
+  }
 
 
 
