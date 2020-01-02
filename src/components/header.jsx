@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import logo from '../img/logo.png'
-import { Link , Redirect } from 'react-router-dom';
+import { Link , Redirect , withRouter } from 'react-router-dom';
+import history from '../history';
+
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +18,8 @@ class Header extends Component {
     render() {
         if(this.state.isLogout===true)
         {
-          console.log('here');
+          
+          return  this.props.history.push('/login');
          
         }
 
@@ -69,8 +73,9 @@ class Header extends Component {
 
    logout()
   {
-    this.setState({isLogout: true });
+    
     localStorage.removeItem('token');
+    window.location.reload(true);
    
   }
 }

@@ -5,17 +5,7 @@ import { Link , Redirect } from 'react-router-dom';
 class List extends Component {
     constructor(props) {
         super(props);
-   
-        const token = localStorage.getItem('token'); 
-        console.log(token);
-
-        let loggegIn = true;
-        if(token===null)
-        {
-            loggegIn = false;
-        }
         this.state = {
-            loggegIn,
 			error : null,
             isLoaded : false,
             databases : []  
@@ -49,13 +39,7 @@ class List extends Component {
 
     }
 	
-    render() { 
-
-        if(this.state.loggegIn==false)
-        {
-            return <Redirect to='/login' />
-        }
-        
+    render() {         
 		const {error, isLoaded, databases} = this.state;
 
 		if(error){

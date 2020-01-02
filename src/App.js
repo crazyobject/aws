@@ -10,7 +10,7 @@ import './css/style.css';
 import './color/default.css';
 import Header from './components/header';
 import { PrivateRoute } from './components/privateroute';
-
+import history from './history';
 
 import { BrowserRouter as Router, Route, Switch , Link} from 'react-router-dom';
 function App() {
@@ -20,12 +20,12 @@ function App() {
     <div id="wrapper">
     <Header />
 
-      <Router>
+      <Router  history={ history } >
             <Switch>
             <PrivateRoute exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
-			<Route path="/List" component={List} />
+		   	    <Route path="/List" component={List} />
             
             </Switch>
       </Router>
