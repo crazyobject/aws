@@ -1962,18 +1962,133 @@ a.btn:focus{
 	text-align: center;
 	outline:0;
 }
-.create-main-content{
+create-main-content{
 	position: absolute;
 	top: 118px;
 	left:0;
 	width: 100%;
-	max-height: 500px;
+	max-height: 450px;
 	overflow-y: scroll;
-}
+	}
+
+	.source-conn-heading {
+		padding-left: 109px;
+		color: #f5a426;
+	}
+	.dest-conn-heading {
+		padding-left: 109px;
+		color: #f5a426;
+	}
 .source-db-dropdown{
-	width: 353px;
+	width: 389px;
 	text-align: left;
 }
+
+.source-db-dropdown .btn-primary {
+	background-color: white;
+	border-color: #ccc;
+	color: #ccc;
+	text-transform: none;
+	height: 28px;
+	padding-top: 2px;
+	font-weight: normal;
+}
+
+
+.required {
+	color: red;
+  }
+
+  .source-test-connection {
+	font-size: 14px;
+	margin-left: 275px;
+  }
+
+  .dest-test-connection {
+	  font-size: 14px;
+	  margin-left: 48px;
+  }
+
+  hr.vertical {
+  width: 0px;
+  height: 100%;
+  /* or height in PX */
+}
+
+  .create-new-header{
+	  margin-bottom: -3px;
+	  margin-top: 10px;
+  }
+
+  .control-label{
+	  padding-top: 3px;
+  }
+
+  .form-control{
+	  height: 28px;
+  }
+
+  hr {
+	  margin-bottom: 3px;
+  }
+  .create-conn-btn{
+	   background-color:white !important;
+	   color: black !important;
+	   border-color: #ccc !important;
+	   text-transform: none;
+	   font-weight: normal;
+	   margin-left: 123px;
+   }
+   .source-test-conn-btn{
+	background-color:white !important;
+	color: black !important;
+	border-color: #ccc !important;
+	text-transform: none;
+	font-weight: normal;
+	margin-left: 123px;
+	margin-left: 2px;
+   }
+   .dest-test-conn-btn{
+	background-color:white !important;
+	color: black !important;
+	border-color: #ccc !important;
+	text-transform: none;
+	font-weight: normal;
+	margin-left: 123px;
+	margin-left: 2px;
+   }
+  .host-address-field{
+	  width: 147px !important;
+	  display: inline !important;
+  }
+  .control-label{
+	  text-align: left !important;
+  }
+
+  #source-db-type{
+	width: 389px;
+    height: 28px;
+    font-size: 14px;
+    background-color: white;
+  }
+
+  #dest-db-type {
+	width: 389px;
+    height: 28px;
+    font-size: 14px;
+    background-color: white;
+  }
+
+  .create-intro-content{
+	padding: 118px 0 60px;
+  }
+  .create-connection-btn{
+	  float: right;
+	  margin-top: -63px;
+	  background-color: orange !important;
+	border-color: orange !important;
+	text-transform: none;
+  }
 
 
 
