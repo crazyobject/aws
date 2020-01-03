@@ -889,8 +889,16 @@ p.lead-footer {
 	color: #ddd;
 }
 
+form.lead select {
+border-color: #cccccc;
+}
+
+form.lead input, select {
+box-shadow: 1.5px 1.5px #eeeeee;
+}
+
 form.lead label,form.lead input {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .panel-body {

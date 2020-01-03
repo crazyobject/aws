@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import cancel from '../img/cancel.png'
 import { Link , Redirect } from 'react-router-dom'; 
 
 class NewConnection extends Component {
@@ -37,7 +37,7 @@ class NewConnection extends Component {
       <div class="row">
         <div class ="col-sm-12">
           <div class="create-new-header">Create New Connection
-            <span class ="reset"><img class ="cross-icon" src="img/cancel.png"/>Reset</span>
+            <span class ="reset"><img class ="cross-icon" src={cancel}/>Reset</span>
           </div>
           <hr/>
           <div class ="col-sm-2"></div>
