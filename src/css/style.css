@@ -1,12 +1,13 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800|Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Fira%20Sans:400,300,300italic,600,700,800|Roboto:400,500,700,900');
 /* --- pe-icon-7-stroke --- */
 
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Sans';
 	font-weight: 300;
     color: #666;
     background-color: #fff;
@@ -24,7 +25,7 @@ input,
 button,
 select,
 textarea {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Sans';
   font-size: inherit;
   line-height: inherit;
 }
@@ -1093,14 +1094,14 @@ Elements
 	border-radius: 3px;
 }
 .cbp-l-filters-alignLeft .cbp-filter-item {
-    font: 600 12px/29px "Open Sans", sans-serif;
+    font: 600 12px/29px "Fira Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
 .cbp-l-grid-team-name {
     /* @editable properties */
-    font: 700 17px "Open Sans", sans-serif;
+    font: 700 17px "Fira Sans", sans-serif;
     color: #456297;
     text-decoration: none;
     display: block;
@@ -1110,23 +1111,23 @@ Elements
 
 .cbp-l-grid-team-position {
     /* @editable properties */
-    font: italic 400 16px "Open Sans", sans-serif;
+    font: italic 400 16px "Fira Sans", sans-serif;
     color: #888888;
     text-align: center;
 	font-style: normal;
 }
 .cbp-popup-singlePage .cbp-l-member-name {
     /* @editable properties */
-    font: bold 16px/16px "Open Sans", sans-serif;
+    font: bold 16px/16px "Fira Sans", sans-serif;
     margin-bottom: 6px;
 }
 .cbp-popup-singlePage .cbp-l-member-position {
     /* @editable properties */
-    font: 400 14px "Open Sans", sans-serif;
+    font: 400 14px "Fira Sans", sans-serif;
 }
 .cbp-popup-singlePage .cbp-l-member-desc {
     /* @editable properties */
-    font: 400 16px "Open Sans", sans-serif;
+    font: 400 16px "Fira Sans", sans-serif;
     margin-top: 15px;
 	line-height: 1.6em;
 }
@@ -1766,7 +1767,7 @@ a.btn:focus{
 	-o-box-shadow: 0 1px 6px rgba(0,0,0,.2); 
     z-index: 5000;
     font-size: 11px;
-    font-family: 'Open Sans', arial, sans-serif;
+    font-family: 'Fira Sans', arial, sans-serif;
 }
 
 #t_options hr {
