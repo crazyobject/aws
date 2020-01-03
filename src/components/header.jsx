@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import logo from '../img/logo.png'
+import megaflow from '../img/megflow.png'
 import { Link , Redirect , withRouter } from 'react-router-dom';
 import history from '../history';
 
@@ -32,7 +33,7 @@ class Header extends Component {
                     <img src={logo} alt="" />
               </a>
               <a class="navbar-brand icon-logo" href="index.html">
-                  <img src="img/megflow.png" alt="" />
+                  <img src={megaflow} alt="" />
             </a>
         </div>
         <div className="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -63,7 +64,7 @@ class Header extends Component {
             <div className="col-sm-6 col-md-6">
               <p className="bold text-left">
 				<a href="#" class="nav-breadscrum-name">Home</a> 
-        <span class="nav-breadscrum-name">></span> 
+        <span class="nav-breadscrum-name"> > </span> 
 				<a href="#"  class="nav-breadscrum-name">Database Connection</a>
 			  </p>
             </div>
