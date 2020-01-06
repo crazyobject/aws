@@ -18,14 +18,15 @@ function App() {
   return (
     <div>
     <div id="wrapper">
-    <Header />
+   
 
       <Router  history={ history } >
+      <Header />
             <Switch>
             <PrivateRoute exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
-		   	    <Route path="/List" component={List} />
+		   	    <PrivateRoute path="/List" component={List} />
             
             </Switch>
       </Router>

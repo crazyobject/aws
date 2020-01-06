@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import logo from '../img/logo.png'
-import { Link , Redirect , withRouter } from 'react-router-dom';
+import { BrowserRouter as Router , Redirect , withRouter , Link} from 'react-router-dom';
 import history from '../history';
 
 
@@ -9,20 +9,17 @@ class Header extends Component {
     constructor(props) {
         super(props);
        
+        const islogout = localStorage.getItem('token')===null ? false : true;
         this.state = {
-           isLogout : false
+           isLogout :  islogout
         };
+        console.log("here" , this.state);
         this.logout = this.logout.bind(this);
     }
 
-    render() {
-        if(this.state.isLogout===true)
-        {
-          
-          return  this.props.history.push('/login');
-         
-        }
 
+    render() {
+     console.log('ddd',this.state);
         return (
             <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
       
@@ -38,7 +35,7 @@ class Header extends Component {
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">Connection <b className="caret"></b></a>
               <ul className="dropdown-menu">
                 <li><a href="create-new.html">Create new</a></li>
-                <li><a href="table-list.html">list</a></li>
+                <li> <Link to="/list">List</Link> </li>
                 <li><a href="index-video.html">3</a></li>
               </ul>
             </li>
@@ -48,8 +45,7 @@ class Header extends Component {
 			<li className="separator dropdown">
 				<i className="fa fa-user" title="User"></i>
 			</li>
-      <li className="separator dropdown" onClick={this.logout}>Logout</li>
-     
+      <li className="separator dropdown " > <Link to="/logout">Logout</Link></li> 
           </ul>
         </div>
 
