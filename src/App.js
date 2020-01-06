@@ -2,6 +2,7 @@ import React from 'react';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 import List from './components/list';
+import NewConnection from './components/newconnection';
 import Logout from './components/logout';
 import Footer from './components/footer';
 import './css/bootstrap.min.css';
@@ -24,6 +25,7 @@ function App() {
       <Header />
             <Switch>
             <PrivateRoute exact path="/" component={Dashboard} />
+			<Route path="/NewConnection" component={NewConnection} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
 		   	    <PrivateRoute path="/List" component={List} />

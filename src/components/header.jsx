@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import logo from '../img/logo.png'
+<<<<<<< HEAD
 import { BrowserRouter as Router , Redirect , withRouter , Link} from 'react-router-dom';
+=======
+import megaflow from '../img/megflow.png'
+import { Link , Redirect , withRouter } from 'react-router-dom';
+>>>>>>> b91c56c1628919902ef141fc6e5a86fea32099ba
 import history from '../history';
 
 
@@ -23,16 +28,19 @@ class Header extends Component {
         return (
             <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
       
-	  <div className="container navigation">
+	  <div className="navigation nav-margin">
         <div className="navbar-header page-scroll">
-          <a className="navbar-brand" href="index.html">
-                    <img src={logo} alt="" height="40" />
-                </a>
+          <a class="navbar-brand icon-xoriant" href="index.html">
+                    <img src={logo} alt="" />
+              </a>
+              <a class="navbar-brand icon-logo" href="index.html">
+                  <img src={megaflow} alt="" />
+            </a>
         </div>
         <div className="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul className="nav navbar-nav">
             <li className="dropdown">
-              <a href="#" className="dropdown-toggle" data-toggle="dropdown">Connection <b className="caret"></b></a>
+              <a href="#" className="dropdown-toggle connection-dropdown" data-toggle="dropdown">Connection <b className="caret"></b></a>
               <ul className="dropdown-menu">
                 <li><a href="create-new.html">Create new</a></li>
                 <li> <Link to="/list">List</Link> </li>
@@ -52,12 +60,13 @@ class Header extends Component {
       </div>
 	  
 	  <div className="top-area">
-        <div className="container">
+        <div className="container nav-breadscrum">
           <div className="row">
             <div className="col-sm-6 col-md-6">
               <p className="bold text-left">
-				<a href="#">Home</a> > 
-				<a href="#">Database Connection</a>
+				<a href="#" class="nav-breadscrum-name">Home</a> 
+        <span class="nav-breadscrum-name"> > </span> 
+				<a href="#"  class="nav-breadscrum-name">Database Connection</a>
 			  </p>
             </div>
           </div>

@@ -19,7 +19,7 @@ class Dashboard extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
-                      <center><img src={nodblogo} /></center>
+                      <center><a href="NewConnection"><img class="nodbimage" src={nodblogo} /></a></center>
                   </div>
                 </div>
               </div>

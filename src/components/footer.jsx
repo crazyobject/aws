@@ -10,7 +10,7 @@ import React, { Component } from 'react'
                     <div className="col-sm-6 col-md-6 col-lg-6">
                     <div className="wow fadeInLeft" data-wow-delay="0.1s">
                         <div className="text-left">
-                        <p>&copy;Copyright - </p>
+                        <p>&copy;Copyright - Xoriant</p>
                         </div>
                     </div>
                     </div>
@@ -18,7 +18,7 @@ import React, { Component } from 'react'
                     <div className="wow fadeInRight" data-wow-delay="0.1s">
                         <div className="text-right">
                         <div className="credits">
-                            abcd
+                            2020
                         </div>
                         </div>
                     </div>
