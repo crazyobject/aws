@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import logo from '../img/logo.png'
-<<<<<<< HEAD
-import { BrowserRouter as Router , Redirect , withRouter , Link} from 'react-router-dom';
-=======
 import megaflow from '../img/megflow.png'
-import { Link , Redirect , withRouter } from 'react-router-dom';
->>>>>>> b91c56c1628919902ef141fc6e5a86fea32099ba
+
+import { BrowserRouter as Router , Redirect , withRouter , Link} from 'react-router-dom';
 import history from '../history';
 
 
