@@ -42,6 +42,7 @@ class Header extends Component {
                 <li><a href="create-new.html">Create new</a></li>
                 <li> <Link to="/list">List</Link> </li>
                 <li><a href="index-video.html">3</a></li>
+				<li><a href="/logout">Logout</a></li>
               </ul>
             </li>
 			<li className="separator">
@@ -50,7 +51,6 @@ class Header extends Component {
 			<li className="separator dropdown">
 				<i className="fa fa-user" title="User"></i>
 			</li>
-      <li className="separator dropdown " > <Link to="/logout">Logout</Link></li> 
           </ul>
         </div>
 
