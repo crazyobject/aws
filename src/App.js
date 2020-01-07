@@ -1,3 +1,10 @@
+/**
+ * app.js
+ *
+ * This is the entry file for the application
+ */
+ 
+// Import all the third party stuff 
 import React from 'react';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
