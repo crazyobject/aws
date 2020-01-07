@@ -25,7 +25,7 @@ function App() {
       <Header />
             <Switch>
             <PrivateRoute exact path="/" component={Dashboard} />
-			<Route path="/NewConnection" component={NewConnection} />
+		      	<Route path="/NewConnection" component={NewConnection} />
             <Route path="/login" component={Login} />
             <Route path="/logout" component={Logout} />
 		   	    <PrivateRoute path="/List" component={List} />

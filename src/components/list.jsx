@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Link , Redirect } from 'react-router-dom'; 
+import '../css/list.css';
 
 class List extends Component {
     constructor(props) {
@@ -49,45 +50,101 @@ class List extends Component {
         }else{
             return(
 			<div>
-            <section id="intro" className="intro">
-            <div className="intro-content">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-12">
-				  
-				  <table class="table table-striped ">
-					  <thead class="thead-dark">
-						<tr>
-						  <th scope="col">#</th>
-						  <th scope="col">database</th>
-						  <th scope="col">Conn type</th>
-						  <th scope="col">created By</th>
-						</tr>
-					  </thead>
-					  <tbody>
-						
-						{
-                        databases.map(databases => (
-                            <tr key={databases.id}>
-							  <td>{databases.dbId}</td>	
-							  <td>{databases.database}</td>
-							  <td>{databases.conType}</td>
-							  <td>{databases.createdBy}</td>
-						</tr>
-						
-                        ))
-						}
-						
-						
-					  </tbody>
-					</table>
-				
-				</div>
-                </div>
-              </div>
+      <section id="intro" class="intro">
+      <div class="intro-content create-intro-content">
+      </div>
+    </section>
+    <div class="container-fluid">
+        <div class="row no-margin ">
+          <div class="col-sm-1">
+            <div class="checkbox t-heading sr-no-margin" >
+              <label>
+                <input type="checkbox" />
+                <span class=" sr-no">Sr</span>
+              </label>
             </div>
-            </section>
           </div>
+          <div class="col-sm-3 pad-top">
+            <div class="t-heading">Source DB 
+                <img src="img/up-down.png"  class="img-arrow"  />
+              <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+            </div>
+            
+          </div>
+          <div class="col-sm-3 pad-top pad-left-dest">
+              <div class="t-heading">Destination DB  
+                  <img src="img/up-down.png"  class="img-arrow"  />
+                <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+              </div>
+          </div>
+          <div class="col-sm-2 pad-top pad-left-created">
+              <div class="t-heading">Created by 
+                  <img src="img/up-down.png"  class="img-arrow"  />
+                  <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+                </div>
+          </div>
+          <div class="col-sm-2 pad-top last-updates">
+              <div class="t-heading">Last updates  
+                  <img src="img/up-down.png"  class="img-arrow"  />
+                  <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+              </div>
+          </div>
+          <div class="col-sm-1 pad-top action-header">
+              <div class="t-heading no-border-right">Actions 
+                
+              </div>
+          </div>
+        
+        </div>
+        { databases.map(databases => (
+      <div class="row row-spacing no-margin-top" key={databases.id}>
+        <div class="col-sm-1">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" />
+              <span class="unique-id">1</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-3 connection-pad-left">
+          <span class="image-logo">
+            
+          </span>
+          <div class="connection-wrapper">
+            <div class="main-text"> {databases.dbId}</div>
+            <div class="sub-text">IP - 192.168.0</div>
+          </div>
+
+        </div>
+        <div class="col-sm-3 connection-pad-left">
+          <span class="image-logo">
+           
+          </span>
+          <div class="connection-wrapper">
+            <div class="main-text"> {databases.conType}</div>
+            <div class="sub-text">IP - 192.168.0</div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="main-text">{databases.createdBy}</div>
+          <div class="sub-text">{databases.createdDate}</div>
+        </div>
+        <div class="col-sm-2">
+          <div class="main-text">{databases.lastUpdate}</div>
+          <div class="sub-text">11:55 AM</div>
+        </div>
+        <div class="col-sm-1 edit-delete">
+          <span class="action edit">Edit</span><span class="separator-dash">|</span>
+          <span class="action">Delete</span>
+        </div>
+      </div>
+
+       ))}
+      
+      
+    </div>
+              
+       </div>
             );
         }    
     }
