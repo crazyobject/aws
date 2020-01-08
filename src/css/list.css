@@ -1,6 +1,7 @@
 section.intro, div.container-fluid {
     background: #F2F3F7;
 }
+
 .list-header-text{
 	color: #000000;
     /* font-family: "Fira Sans"; */
@@ -10,6 +11,7 @@ section.intro, div.container-fluid {
 	line-height: 38px;
     padding-bottom: 26px;
     padding-top: 21px;
+	margin-top:-80px !important;
 }
 .t-heading{
     color: #979797;	
@@ -39,7 +41,7 @@ section.intro, div.container-fluid {
 	text-align: center;
 }
 .container-list{
-	padding: 0 60px 0 44px;
+	/*padding: 0 60px 0 44px;*/
 	background: #F2F3F7;
 }
 .connection-count{
