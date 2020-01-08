@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import dbImg from '../img/oracle.jpg'
 import { Link , Redirect } from 'react-router-dom'; 
 import '../css/list.css';
 
@@ -63,7 +63,7 @@ class List extends Component {
 				<div class="col-12">
 					<div class="list-header-text">Connections(2)</div>
 					<button type="button" class="btn  create-connection-btn">
-						<span class="btn-text">Create New Connections</span>
+						<a href="NewConnection"><span class="btn-text">Create New Connections</span></a>
 					</button>
 					<div class="delete ">
 						<span class="delete-text">Delete</span>
@@ -126,7 +126,7 @@ class List extends Component {
 			</div>
 			<div class="col-sm-3 connection-pad-left">
 			  <span class="image-logo">
-				
+				<img src={dbImg} alt=""/>
 			  </span>
 			  <div class="connection-wrapper">
 				<div class="main-text"> {databases.dbId}</div>
@@ -136,7 +136,7 @@ class List extends Component {
 			</div>
 			<div class="col-sm-3 connection-pad-left">
 			  <span class="image-logo">
-			   
+			   <img src={dbImg} alt="DB"/>
 			  </span>
 			  <div class="connection-wrapper">
 				<div class="main-text"> {databases.conType}</div>

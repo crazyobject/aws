@@ -1,5 +1,6 @@
 section.intro, div.container-fluid {
     background: #F2F3F7;
+	font-size: 14px;	
 }
 
 .list-header-text{
@@ -39,6 +40,7 @@ section.intro, div.container-fluid {
 	letter-spacing: -0.84px;	
 	line-height: 18px;	
 	text-align: center;
+	font-weight:400 !important;
 }
 .container-list{
 	/*padding: 0 60px 0 44px;*/
@@ -71,15 +73,15 @@ section.intro, div.container-fluid {
 }
 .row-spacing{
     background: #fff;
-    margin: 9px 15px;
-    padding: 18px 0 17px 0;
-    border-radius: 14px;
+    margin: 9px 15px !important;
+    padding: 18px 0 17px 0 !important;
+    border-radius: 14px !important;
 }
 .edit-delete{
     color: #339FE0;
     cursor: pointer;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
     padding-top: 11px;
 }
 
@@ -119,6 +121,11 @@ section.intro, div.container-fluid {
 .image-logo{
     float: left;
 }
+.image-logo img{
+    width:40px;
+	height:40px;
+}
+
 .connection-wrapper{
     float: left;
     margin-left: 22px;
@@ -127,8 +134,8 @@ section.intro, div.container-fluid {
     margin-top: 0;
 }
 .no-margin{
-    margin-right:0;
-    margin-left:0
+    margin-right:0 !important;
+    margin-left:0 !important;
 }
 .sr-no-margin{
     margin-left: 15px;
@@ -145,8 +152,8 @@ section.intro, div.container-fluid {
     border-right:0
 }
 .last-updates{
-    width: 182px;
-    padding-left: 8px;
+    width: 182px !important;
+    padding-left: 8px !important;
 }
 .action-header{
     padding-left: 0;
@@ -160,13 +167,13 @@ section.intro, div.container-fluid {
     color:#979797
 }
 .connection-pad-left{
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 .pad-left-created{
     padding-left: 11px;
 }
 .pad-left-dest{
-    padding-left: 6px;
+    padding-left: 6px !important;
 }
 .row.row-spacing:hover {
     box-shadow: 10px 10px 11px 20px  #D8E1EF;

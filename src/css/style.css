@@ -8,7 +8,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans';
-	font-weight: 300;
     color: #666;
     background-color: #fff;
 	font-size: 16px;
@@ -623,6 +622,9 @@ cursor: pointer;
 /* misc */
 hr {
   margin-top: 10px;
+}
+hr.border{
+	border:0.8px solid #D6D7DB;
 }
 
 hr.bold {
@@ -2106,6 +2108,13 @@ create-main-content{
   }
   .form-group{
 	padding-bottom: 15px;
+  }
+  .vertical-line{
+	position: absolute;
+	border-right: 1px solid #D6D7DB;
+	left: 60%;
+	top: 11%;
+	height: 74%;
   }
   .username-width{
 	width: 201px !important;

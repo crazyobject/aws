@@ -39,9 +39,8 @@ class Header extends Component {
             <li className="dropdown">
               <a href="#" className="dropdown-toggle connection-dropdown" data-toggle="dropdown">Connection <b className="caret"></b></a>
               <ul className="dropdown-menu">
-                <li><a href="create-new.html">Create new</a></li>
+                <li><a href="/NewConnection">Create new</a></li>
                 <li> <Link to="/list">List</Link> </li>
-                <li><a href="index-video.html">3</a></li>
 				<li><a href="/logout">Logout</a></li>
               </ul>
             </li>

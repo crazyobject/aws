@@ -1,6 +1,6 @@
 [
     {
-		"dbId" : "db id",
+		"dbId" : "1",
 		"type" : "db type",
 		"database" : "Connectio  A",
 		"conType" : "Source",
@@ -9,13 +9,32 @@
 		"lastUpdate" : "date"    
 	},
     {
-		"dbId" : "db id",
+		"dbId" : "2",
 		"type" : "db type 2",
 		"database" : "Connectio  b",
 		"conType" : "Source 2",
 		"createdBy" : "name name 2",
 		"createdDate" : "date 2",
 		"lastUpdate" : "date 2"
+    },
+    {
+		"dbId" : "3",
+		"type" : "db type 1",
+		"database" : "Connectio  c",
+		"conType" : "Source 3",
+		"createdBy" : "name name 3",
+		"createdDate" : "date 3",
+		"lastUpdate" : "date 3"
+    },
+    {
+		"dbId" : "4",
+		"type" : "db type 4",
+		"database" : "Connectio  4",
+		"conType" : "Source 4",
+		"createdBy" : "name name 4",
+		"createdDate" : "date 4",
+		"lastUpdate" : "date 4"
     }
+	
 ]
 

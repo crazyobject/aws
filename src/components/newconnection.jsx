@@ -39,7 +39,7 @@ class NewConnection extends Component {
           <div class="create-new-header">Create New Connection
             <span class ="reset"><img class ="cross-icon" src={cancel}/>Reset</span>
           </div>
-          <hr/>
+          <hr class="border"/>
           <div class ="col-sm-2"></div>
           <div class ="col-sm-5 source-conn-heading pad-0">Source</div>
           <div class ="col-sm-5 source-conn-heading">Destination</div>
@@ -168,7 +168,7 @@ class NewConnection extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <hr/>
+                            <hr class="border"/>
                             <div class="form-group btn-create">
                                 <div class="col-md-8">
                    
@@ -178,6 +178,8 @@ class NewConnection extends Component {
                                   <button type="submit" class="btn btn-primary create-conn-btn">Create Connection</button>
                                 </div>
                               </div>
+							  
+							  <div class="vertical-line"></div>
            </form>
           </div> 
       </div>
