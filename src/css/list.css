@@ -1,4 +1,4 @@
-body#page-top {
+section.intro, div.container-fluid {
     background: #F2F3F7;
 }
 .list-header-text{
@@ -65,6 +65,7 @@ body#page-top {
     font-size: 15px;	
     letter-spacing: -0.47px;	
     line-height: 18px;
+	text-transform:capitalize;
 }
 .row-spacing{
     background: #fff;

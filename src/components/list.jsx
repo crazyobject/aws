@@ -49,12 +49,30 @@ class List extends Component {
             return <div>Loading ...</div>
         }else{
             return(
+			
+			
+			
 			<div>
       <section id="intro" class="intro">
-      <div class="intro-content create-intro-content">
-      </div>
-    </section>
-    <div class="container-fluid">
+
+		<div class="intro-content create-intro-content">
+		</div>
+
+		<div class="container-list">
+			<div class="row">
+				<div class="col-12">
+					<div class="list-header-text">Connections(2)</div>
+					<button type="button" class="btn  create-connection-btn">
+						<span class="btn-text">Create New Connections</span>
+					</button>
+					<div class="delete ">
+						<span class="delete-text">Delete</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<div class="container-fluid">
         <div class="row no-margin ">
           <div class="col-sm-1">
             <div class="checkbox t-heading sr-no-margin" >
@@ -96,53 +114,53 @@ class List extends Component {
           </div>
         
         </div>
-        { databases.map(databases => (
-      <div class="row row-spacing no-margin-top" key={databases.id}>
-        <div class="col-sm-1">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" />
-              <span class="unique-id">1</span>
-            </label>
-          </div>
-        </div>
-        <div class="col-sm-3 connection-pad-left">
-          <span class="image-logo">
-            
-          </span>
-          <div class="connection-wrapper">
-            <div class="main-text"> {databases.dbId}</div>
-            <div class="sub-text">IP - 192.168.0</div>
-          </div>
+			{ databases.map(databases => (
+		  <div class="row row-spacing no-margin-top" key={databases.id}>
+			<div class="col-sm-1">
+			  <div class="checkbox">
+				<label>
+				  <input type="checkbox" />
+				  <span class="unique-id">1</span>
+				</label>
+			  </div>
+			</div>
+			<div class="col-sm-3 connection-pad-left">
+			  <span class="image-logo">
+				
+			  </span>
+			  <div class="connection-wrapper">
+				<div class="main-text"> {databases.dbId}</div>
+				<div class="sub-text">IP - 192.168.0</div>
+			  </div>
 
-        </div>
-        <div class="col-sm-3 connection-pad-left">
-          <span class="image-logo">
-           
-          </span>
-          <div class="connection-wrapper">
-            <div class="main-text"> {databases.conType}</div>
-            <div class="sub-text">IP - 192.168.0</div>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="main-text">{databases.createdBy}</div>
-          <div class="sub-text">{databases.createdDate}</div>
-        </div>
-        <div class="col-sm-2">
-          <div class="main-text">{databases.lastUpdate}</div>
-          <div class="sub-text">11:55 AM</div>
-        </div>
-        <div class="col-sm-1 edit-delete">
-          <span class="action edit">Edit</span><span class="separator-dash">|</span>
-          <span class="action">Delete</span>
-        </div>
-      </div>
+			</div>
+			<div class="col-sm-3 connection-pad-left">
+			  <span class="image-logo">
+			   
+			  </span>
+			  <div class="connection-wrapper">
+				<div class="main-text"> {databases.conType}</div>
+				<div class="sub-text">IP - 192.168.0</div>
+			  </div>
+			</div>
+			<div class="col-sm-2">
+			  <div class="main-text">{databases.createdBy}</div>
+			  <div class="sub-text">{databases.createdDate}</div>
+			</div>
+			<div class="col-sm-2">
+			  <div class="main-text">{databases.lastUpdate}</div>
+			  <div class="sub-text">11:55 AM</div>
+			</div>
+			<div class="col-sm-1 edit-delete">
+			  <span class="action edit">Edit</span><span class="separator-dash">|</span>
+			  <span class="action">Delete</span>
+			</div>
+		  </div>
 
-       ))}
-      
-      
-    </div>
+		   ))}
+		   </div>
+	
+    </section>
               
        </div>
             );
