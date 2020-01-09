@@ -20,25 +20,24 @@ import Header from './components/header';
 import { PrivateRoute } from './components/privateroute';
 import history from './history';
 
-import { BrowserRouter as Router, Route, Switch , Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch , withRouter} from 'react-router-dom';
 function App() {
-  const logouturl = '/logout';
   return (
     <div>
     <div id="wrapper">
-   
-
       <Router  history={ history } >
-      <Header />
+      { window.location.pathname!=='/login' ? <Header/>:'' } 
             <Switch>
-            <PrivateRoute exact path="/" component={Dashboard} />
-		      	<Route path="/NewConnection" component={NewConnection} />
-            <Route path="/login" component={Login} />
+            <PrivateRoute exact path="/" component={withRouter(Dashboard)} />
+		      	<PrivateRoute exact path="/NewConnection" component={NewConnection} />
+            <Route exact path="/login" component={withRouter(Login)}  />
             <Route path="/logout" component={Logout} />
 		   	    <PrivateRoute path="/List" component={List} />
             
             </Switch>
+            
       </Router>
+      
     <Footer />
     
    </div>

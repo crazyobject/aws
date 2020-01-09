@@ -41,7 +41,7 @@ class Header extends Component {
               <ul className="dropdown-menu">
                 <li><a href="/NewConnection">Create new</a></li>
                 <li> <Link to="/list">List</Link> </li>
-				<li><a href="/logout">Logout</a></li>
+			        	<li> <Link to="/logout">Logout</Link> </li>
               </ul>
             </li>
 			<li className="separator">
@@ -76,7 +76,7 @@ class Header extends Component {
   {
     
     localStorage.removeItem('token');
-    window.location.reload(true);
+    window.location.location('/login');
    
   }
 }
