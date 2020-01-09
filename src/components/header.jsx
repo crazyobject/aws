@@ -27,10 +27,10 @@ class Header extends Component {
       
 	  <div className="navigation nav-margin">
         <div className="navbar-header page-scroll">
-          <a class="navbar-brand icon-xoriant" href="index.html">
+          <a className="navbar-brand icon-xoriant" href="index.html">
                     <img src={logo} alt="" />
               </a>
-              <a class="navbar-brand icon-logo" href="index.html">
+              <a className="navbar-brand icon-logo" href="index.html">
                   <img src={megaflow} alt="" />
             </a>
         </div>
@@ -60,9 +60,9 @@ class Header extends Component {
           <div className="row">
             <div className="col-sm-6 col-md-6">
               <p className="bold text-left">
-				<a href="#" class="nav-breadscrum-name">Home</a> 
-        <span class="nav-breadscrum-name"> > </span> 
-				<a href="#"  class="nav-breadscrum-name">Database Connection</a>
+				<a href="#" className="nav-breadscrum-name">Home</a> 
+        <span className="nav-breadscrum-name"> > </span> 
+				<a href="#"  className="nav-breadscrum-name">Database Connection</a>
 			  </p>
             </div>
           </div>

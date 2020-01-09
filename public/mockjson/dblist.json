@@ -1,40 +1,50 @@
-[
-    {
-		"dbId" : "1",
-		"type" : "db type",
-		"database" : "Connectio  A",
-		"conType" : "Source",
-		"createdBy" : "name name",
-		"createdDate" : "date",
-		"lastUpdate" : "date"    
-	},
-    {
-		"dbId" : "2",
-		"type" : "db type 2",
-		"database" : "Connectio  b",
-		"conType" : "Source 2",
-		"createdBy" : "name name 2",
-		"createdDate" : "date 2",
-		"lastUpdate" : "date 2"
-    },
-    {
-		"dbId" : "3",
-		"type" : "db type 1",
-		"database" : "Connectio  c",
-		"conType" : "Source 3",
-		"createdBy" : "name name 3",
-		"createdDate" : "date 3",
-		"lastUpdate" : "date 3"
-    },
-    {
-		"dbId" : "4",
-		"type" : "db type 4",
-		"database" : "Connectio  4",
-		"conType" : "Source 4",
-		"createdBy" : "name name 4",
-		"createdDate" : "date 4",
-		"lastUpdate" : "date 4"
-    }
-	
-]
-
+{
+    "responseCode": "200",
+    "responseText": [
+		{
+			"uniqueID" : "1",
+			
+			"sourceDB" : "db name",
+			"sourceIP" : "12.1.1.1",
+			"SourceDatabaseType" : "Oracle",
+			
+			"destDB" : " dest db name",
+			"destIP" : "12.3.3.3",
+			"DestDatabaseType" : "Oracle",
+			
+			"createdBy" : "John Doe",
+			"createdDate" : "05-01-2020",
+			"lastUpdate" : "04-01-2020"
+		},
+		{
+			"uniqueID" : "2",
+			
+			"sourceDB" : "Oracle DB",
+			"sourceIP" : "10.3.3.3",
+			"SourceDatabaseType" : "Oracle",
+			
+			"destDB" : "DB Dest",
+			"destIP" : "10.20.3.3",
+			"DestDatabaseType" : "Oracle Dest2",
+			
+			"createdBy" : "John Albert",
+			"createdDate" : "05-01-2020",
+			"lastUpdate" : "01-01-2020"
+		},
+		{
+			"uniqueID" : "3",
+			
+			"sourceDB" : "Oracle New DB",
+			"sourceIP" : "40.34.3.3",
+			"SourceDatabaseType" : "Oracle",
+			
+			"destDB" : "DestDB",
+			"destIP" : "30.10.30.3",
+			"DestDatabaseType" : "Oracle Dest2",
+			
+			"createdBy" : "Will Smith",
+			"createdDate" : "02-01-2020",
+			"lastUpdate" : "06-01-2020"
+		}
+	]
+}

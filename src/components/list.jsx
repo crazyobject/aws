@@ -24,9 +24,10 @@ class List extends Component {
         .then(
             // handle the result
             (result) => {
+               console.log("Resulyt" , result.responseText);
                 this.setState({
                     isLoaded : true,
-                    databases : result
+                    databases : result.responseText
                 });
             },
             // Handle error 
@@ -53,107 +54,107 @@ class List extends Component {
 			
 			
 			<div>
-      <section id="intro" class="intro">
+      <section id="intro" className="intro">
 
-		<div class="intro-content create-intro-content">
+		<div className="intro-content create-intro-content">
 		</div>
 
-		<div class="container-list">
-			<div class="row">
-				<div class="col-12">
-					<div class="list-header-text">Connections(2)</div>
-					<button type="button" class="btn  create-connection-btn">
-						<a href="NewConnection"><span class="btn-text">Create New Connections</span></a>
+		<div className="container-list">
+			<div className="row">
+				<div className="col-12">
+					<div className="list-header-text">Connections({this.state.databases.length})</div>
+					<button type="button" className="btn  create-connection-btn">
+						<a href="NewConnection"><span className="btn-text">Create New Connections</span></a>
 					</button>
-					<div class="delete ">
-						<span class="delete-text">Delete</span>
+					<div className="delete ">
+						<span className="delete-text">Delete</span>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-<div class="container-fluid">
-        <div class="row no-margin ">
-          <div class="col-sm-1">
-            <div class="checkbox t-heading sr-no-margin" >
+<div className="container-fluid">
+        <div className="row no-margin ">
+          <div className="col-sm-1">
+            <div className="checkbox t-heading sr-no-margin" >
               <label>
                 <input type="checkbox" />
-                <span class=" sr-no">Sr</span>
+                <span className=" sr-no">Sr</span>
               </label>
             </div>
           </div>
-          <div class="col-sm-3 pad-top">
-            <div class="t-heading">Source DB 
-                <img src="img/up-down.png"  class="img-arrow"  />
-              <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+          <div className="col-sm-3 pad-top">
+            <div className="t-heading">Source DB 
+                <img src="img/up-down.png"  className="img-arrow"  />
+              <span><i className="fa fa-filter" aria-hidden="true"></i></span>
             </div>
             
           </div>
-          <div class="col-sm-3 pad-top pad-left-dest">
-              <div class="t-heading">Destination DB  
-                  <img src="img/up-down.png"  class="img-arrow"  />
-                <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+          <div className="col-sm-3 pad-top pad-left-dest">
+              <div className="t-heading">Destination DB  
+                  <img src="img/up-down.png"  className="img-arrow"  />
+                <span><i className="fa fa-filter" aria-hidden="true"></i></span>
               </div>
           </div>
-          <div class="col-sm-2 pad-top pad-left-created">
-              <div class="t-heading">Created by 
-                  <img src="img/up-down.png"  class="img-arrow"  />
-                  <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+          <div className="col-sm-2 pad-top pad-left-created">
+              <div className="t-heading">Created by 
+                  <img src="img/up-down.png"  className="img-arrow"  />
+                  <span><i className="fa fa-filter" aria-hidden="true"></i></span>
                 </div>
           </div>
-          <div class="col-sm-2 pad-top last-updates">
-              <div class="t-heading">Last updates  
-                  <img src="img/up-down.png"  class="img-arrow"  />
-                  <span><i class="fa fa-filter" aria-hidden="true"></i></span>
+          <div className="col-sm-2 pad-top last-updates">
+              <div className="t-heading">Last updates  
+                  <img src="img/up-down.png"  className="img-arrow"  />
+                  <span><i className="fa fa-filter" aria-hidden="true"></i></span>
               </div>
           </div>
-          <div class="col-sm-1 pad-top action-header">
-              <div class="t-heading no-border-right">Actions 
+          <div className="col-sm-1 pad-top action-header">
+              <div className="t-heading no-border-right">Actions 
                 
               </div>
           </div>
         
         </div>
 			{ databases.map(databases => (
-		  <div class="row row-spacing no-margin-top" key={databases.id}>
-			<div class="col-sm-1">
-			  <div class="checkbox">
+		  <div className="row row-spacing no-margin-top" key={databases.uniqueID}>
+			<div className="col-sm-1">
+			  <div className="checkbox">
 				<label>
 				  <input type="checkbox" />
-				  <span class="unique-id">1</span>
+				  <span className="unique-id">1</span>
 				</label>
 			  </div>
 			</div>
-			<div class="col-sm-3 connection-pad-left">
-			  <span class="image-logo">
+			<div className="col-sm-3 connection-pad-left">
+			  <span className="image-logo">
 				<img src={dbImg} alt=""/>
 			  </span>
-			  <div class="connection-wrapper">
-				<div class="main-text"> {databases.dbId}</div>
-				<div class="sub-text">IP - 192.168.0</div>
+			  <div className="connection-wrapper">
+				<div className="main-text"> {databases.sourceDB}</div>
+				<div className="sub-text">{databases.sourceIP}</div>
 			  </div>
 
 			</div>
-			<div class="col-sm-3 connection-pad-left">
-			  <span class="image-logo">
+			<div className="col-sm-3 connection-pad-left">
+			  <span className="image-logo">
 			   <img src={dbImg} alt="DB"/>
 			  </span>
-			  <div class="connection-wrapper">
-				<div class="main-text"> {databases.conType}</div>
-				<div class="sub-text">IP - 192.168.0</div>
+			  <div className="connection-wrapper">
+				<div className="main-text"> {databases.destDB}</div>
+				<div className="sub-text">{databases.destIP}</div>
 			  </div>
 			</div>
-			<div class="col-sm-2">
-			  <div class="main-text">{databases.createdBy}</div>
-			  <div class="sub-text">{databases.createdDate}</div>
+			<div className="col-sm-2">
+			  <div className="main-text">{databases.createdBy}</div>
+			  <div className="sub-text">{databases.createdDate}</div>
 			</div>
-			<div class="col-sm-2">
-			  <div class="main-text">{databases.lastUpdate}</div>
-			  <div class="sub-text">11:55 AM</div>
+			<div className="col-sm-2">
+			  <div className="main-text">{databases.lastUpdate}</div>
+			  <div className="sub-text">11:55 AM</div>
 			</div>
-			<div class="col-sm-1 edit-delete">
-			  <span class="action edit">Edit</span><span class="separator-dash">|</span>
-			  <span class="action">Delete</span>
+			<div className="col-sm-1 edit-delete">
+			  <span className="action edit">Edit</span><span className="separator-dash">|</span>
+			  <span className="action">Delete</span>
 			</div>
 		  </div>
 
