@@ -25,8 +25,8 @@ function App() {
   return (
     <div>
     <div id="wrapper">
-      <Router  history={ history } >
-      { window.location.pathname!=='/login' ? <Header/>:'' } 
+      <Router  >
+      <Header/>
             <Switch>
             <PrivateRoute exact path="/" component={withRouter(Dashboard)} />
 		      	<PrivateRoute exact path="/NewConnection" component={NewConnection} />

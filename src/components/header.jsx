@@ -21,8 +21,9 @@ class Header extends Component {
 
 
     render() {
-     console.log('ddd',this.state);
+     if (window.location.pathname === '/login') return null;
         return (
+          
             <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
       
 	  <div className="navigation nav-margin">

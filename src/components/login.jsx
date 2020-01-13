@@ -19,7 +19,7 @@ class Login extends Component {
 
         if(this.state.submitted===true)
         {
-            return <Redirect to='/' />
+            window.location.href='/';
         }
 
         return (  

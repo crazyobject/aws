@@ -8,7 +8,7 @@ export default class Logout extends Component {
       localStorage.removeItem("token");
     }
     render() {
-        return <Redirect to='/login' />
+        window.location.href='/login';
         return (
             <div>
                 
