@@ -19,6 +19,18 @@ class List extends Component {
 	*/
 	 componentDidMount() 
     {
+	/*
+      fetch("https://0xaiw5eve3.execute-api.us-east-2.amazonaws.com/testdev",{
+	  method: 'POST',
+	  headers: {
+		'Accept': 'application/json',
+		'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+		operation: 'LIST'
+	  })
+	  });	
+	*/
       fetch("http://localhost:3000/mockjson/dblist.json")
         .then( response => response.json())
         .then(
