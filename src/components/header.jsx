@@ -15,7 +15,6 @@ class Header extends Component {
         this.state = {
            isLogout :  islogout
         };
-        console.log("here" , this.state);
         this.logout = this.logout.bind(this);
     }
 

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link , Redirect } from 'react-router-dom';
 import { userService } from '../_services';
+
+import meghFlow from '../img/login/MeghFlow_2.1.png'
+import user_ico from '../img/login/ico_user.png'
+import user_pwd from '../img/login/ico_password.png'
+
 class Login extends Component {
     constructor(props) {
         super(props);
@@ -23,41 +28,32 @@ class Login extends Component {
         }
 
         return (  
-            <section id="intro" className="intro">
-            <div className="intro-content">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-12">
-                  <div className="col-md-6 col-md-offset-3">
-                <h2>Login</h2>
-                <form name="form" onSubmit={this.handleSubmit}>
-                    <div className={'form-group' + (submitted && !username ? ' has-error' : '')}>
-                        <label htmlFor="username">Username</label>
-                        <input type="text" className="form-control" name="username" value={username} onChange={this.handleChange} />
-                        {submitted && !username &&
-                            <div className="help-block">Username is required</div>
-                        }
+            
+			<div class="hero-image">
+            <div class="hero-text">
+                <form name="form" class="container1" onSubmit={this.handleSubmit}>
+                    <img src={meghFlow} class="login-megnflow-icon"/>
+                    <div class="data-text"><span class="aws-text">AWS</span> based Serverless Unified Data Solution
                     </div>
-                    <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
-                        <label htmlFor="password">Password</label>
-                        <input type="password" className="form-control" name="password" value={password} onChange={this.handleChange} />
-                        {submitted && !password &&
-                            <div className="help-block">Password is required</div>
-                        }
+
+                    <div class="form-group custom-form-group-login">
+						<input type="text" className="form-control" name="username" placeholder="Username" value={username} onChange={this.handleChange} placeholder="Username"/>
+						
+                        <img class="login-text-icon" src={user_ico}/>
                     </div>
-                    <div className="form-group">
-                        <button className="btn btn-primary">Login</button>
-                    
-                        <Link to="/register" className="btn btn-link">Register</Link>
+                    <div class="form-group custom-form-group-login">
+						<input type="password" className="form-control" name="password" value={password} onChange={this.handleChange}  placeholder="Password"/>
+                        <img class="login-text-icon" src={user_pwd}/>
                     </div>
+
+                    <button type="submit" class="btn login">LOGIN</button>
+                    <div class="forget-pass">Forgot Username / Password?</div>
+                    <span class="register">Register</span>
                 </form>
             </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </section>
-      
+
+        </div>
+			
              );
     }
 

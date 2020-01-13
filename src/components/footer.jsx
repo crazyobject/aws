@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
  class Footer extends Component {
     render() {
+		if (window.location.pathname === '/login') return null;
         return (
                 <footer>
                 <div className="sub-footer">

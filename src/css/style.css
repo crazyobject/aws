@@ -33,6 +33,16 @@ textarea {
 /* ===========
 layout
 ============= */
+#root{
+height:100%;
+}
+#root > div:first-child{
+height:100%;
+}
+#wrapper{
+height:100%;
+}
+
 #wrapper.boxed {
 	margin: 0 auto;
 	background-color: #fff;
@@ -2395,4 +2405,149 @@ thead{
 /* raw styles can delete later*/
 .nodbimage {
 height:290px;
+}
+
+/*  login page styles */
+* {
+    box-sizing: border-box;
+  }
+
+.bg {
+    /* The image used */
+    background-image: url("../img/login/1x_Image1.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image {
+    background-image: url(../img/login/1x_Image1.png);
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+  }
+  
+  .hero-text {
+    /* position: absolute; */
+    height: 100%;
+    /* width: 1135px; */
+    background-image: url(../img/login/1x_Image2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    /* left: 142px; */
+    /* top: 60px;*/
+  }
+  /* Add styles to the form container */
+.container1 {
+   /* position: absolute; */
+    /* left: 15px; */
+    /* margin: 20px; */
+     margin-left: 124px;
+    max-width: 450px;
+    padding-top: 110px;
+    padding-left: 48px;
+    padding-right: 0;
+  }
+  
+  /* Full-width input fields */
+ 
+  
+  input[type=text]:focus, input[type=password]:focus {
+    /* background-color: #ddd; */
+    outline: 0;
+  }
+  
+ 
+  
+  .btn:hover {
+    opacity: 1;
+    color: #ffff;
+  }
+  .data-text{
+    color: #FFFFFF;
+    font-family: "Fira Sans";
+    font-size: 11px;
+    letter-spacing: 0.04px;
+    line-height: 13px;
+    padding-top: 19px;
+    padding-bottom: 43px;
+  }
+  span.aws-text {
+    color: #B97926;
+}
+.login{
+    color: #FFFFFF;
+    font-family: "Fira Sans";
+    font-size: 20px;
+    letter-spacing: 0.06px;
+    line-height: 24px;
+    background-color: #E98C40;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 17px;
+}
+.forget-pass{
+    color: #FFFFFF;	
+    font-size: 14px;	
+    letter-spacing: 0.06px;	
+    line-height: 17px;
+    cursor: pointer;
+    width: 203px;
+}
+.register{
+    float:right;
+    color: #F2B370;		
+    font-size: 14px;	
+    letter-spacing: 0.06px;	
+    line-height: 17px;
+    cursor: pointer;
+    margin-top: -19px;
+    margin-right: 59px;
+}
+.custom-input-box {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #5E5B5B;
+    border-radius: 0 !important;
+    width: 350px !important;
+    margin-bottom: 40px;
+    color:#fff !important;
+    font-size: 14px !important;
+    letter-spacing: 0.06px !important;	
+    line-height: 17px !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    padding-left: 33px;
+}
+.custom-form-group-login{
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.custom-input-box:focus{
+    border-color: #F5F5F5 !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.login-megnflow-icon{
+    width:178px;
+    height: 71px
+}
+.login-text-icon{
+    margin-top: -146px;
 }
